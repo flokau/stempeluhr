@@ -6,6 +6,6 @@ Intended features:
 * check in and out, measure the time in between
 * export daily report
 * countdown daily working time
-* display todays end time
+* display today's end time
 * store flex time
 * propose earlier end times on fridays to use up flex time

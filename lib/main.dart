@@ -67,7 +67,7 @@ class _StempeluhrState extends State<Stempeluhr> {
                 ),
                 Container(
                   alignment: Alignment.centerRight,
-                  color: Colors.green,
+                  color: Colors.purple,
                   height: 100.0,
                   width: 100.0,
                 ),
