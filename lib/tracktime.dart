@@ -11,8 +11,8 @@ class _TrackTimeState extends State<TrackTime> {
     return Container(
       child: Icon(
         Icons.play_circle_outline,
-        color: Colors.black,
-        size: 24.0,
+        color: Colors.green,
+        size: 100.0,
       ),
     );
   }

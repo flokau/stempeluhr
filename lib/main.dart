@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:intl/intl.dart';
+import 'tracktime.dart';
 
 void main() {
   runApp(
@@ -60,10 +61,7 @@ class _StempeluhrState extends State<Stempeluhr> {
                   width: 70.0,
                 ),
                 Expanded(
-                  child: Icon(
-                    Icons.play_circle_outline,
-                    size: 100.0,
-                  ),
+                  child: TrackTime(),
                 ),
                 Container(
                   alignment: Alignment.centerRight,
