@@ -35,6 +35,8 @@ android/
 ios/
 linux/
 web/
+macos/
+windows/
 
 # Web related
 lib/generated_plugin_registrant.dart
