@@ -8,10 +8,10 @@ class Stempeluhr extends StatefulWidget {
   const Stempeluhr({super.key});
 
   @override
-  _StempeluhrState createState() => _StempeluhrState();
+  StempeluhrState createState() => StempeluhrState();
 }
 
-class _StempeluhrState extends State<Stempeluhr> {
+class StempeluhrState extends State<Stempeluhr> {
   late String _now;
 
   @override
@@ -23,8 +23,7 @@ class _StempeluhrState extends State<Stempeluhr> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
+    return Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
@@ -64,8 +63,7 @@ class _StempeluhrState extends State<Stempeluhr> {
             ),
           ),
         ],
-      ),
-    );
+      );
   }
 
   void _getCurrentTime() {
