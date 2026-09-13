@@ -5,6 +5,8 @@ import 'package:intl/intl.dart';
 import 'tracktime.dart';
 
 class Stempeluhr extends StatefulWidget {
+  const Stempeluhr({super.key});
+
   @override
   _StempeluhrState createState() => _StempeluhrState();
 }
@@ -15,7 +17,7 @@ class _StempeluhrState extends State<Stempeluhr> {
   @override
   void initState() {
     _getCurrentTime();
-    Timer.periodic(Duration(seconds: 1), (Timer t) => _getCurrentTime());
+    Timer.periodic(const Duration(seconds: 1), (Timer t) => _getCurrentTime());
     super.initState();
   }
 
@@ -32,13 +34,13 @@ class _StempeluhrState extends State<Stempeluhr> {
               children: [
                 Text(
                   _now,
-                  style: TextStyle(fontSize: 150),
+                  style: const TextStyle(fontSize: 150),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(30),
+            padding: const EdgeInsets.all(30),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -49,7 +51,7 @@ class _StempeluhrState extends State<Stempeluhr> {
                   height: 70.0,
                   width: 70.0,
                 ),
-                Expanded(
+                const Expanded(
                   child: TrackTime(),
                 ),
                 Container(
@@ -68,8 +70,8 @@ class _StempeluhrState extends State<Stempeluhr> {
 
   void _getCurrentTime() {
     setState(() {
-      var now = new DateTime.now();
-      var formatter = new DateFormat('HH:mm:ss');
+      var now = DateTime.now();
+      var formatter = DateFormat('HH:mm:ss');
       _now = formatter.format(now);
     });
   }

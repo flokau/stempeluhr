@@ -4,7 +4,7 @@ import 'stempeluhr.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: Center(
           child: Stempeluhr(),
